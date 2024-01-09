@@ -1,0 +1,52 @@
+@use "../../../assets/styles/variables" as vars;
+
+.about {
+    margin:40px 40px ;
+
+    h3{
+        font-size: 4rem;
+        color: vars.$color-secondary;
+        font-family: vars.$font-secondary;
+    }
+
+    
+
+    .container {
+        
+        display: flex;
+        margin-top: 20px;
+
+        .section{
+            display: flex;
+            flex-direction: column;
+
+            h4{
+                font-size: 2rem;
+                color: vars.$color-primary;
+                font-family: vars.$font-primary;
+            }
+        
+            p{
+                margin-top: 30px;
+                font-size: 1.5rem;
+                color: vars.$color-primary;
+                font-family: vars.$font-primary;
+            }
+
+            .readMore {
+                display: inline-block;
+                margin-left: auto;
+                margin-right: 50px;
+                text-decoration: underline;
+                cursor: pointer;
+                transition: all 0.2s ease-in-out;
+                
+                &:hover{
+                    color: vars.$color-span;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    }
+    

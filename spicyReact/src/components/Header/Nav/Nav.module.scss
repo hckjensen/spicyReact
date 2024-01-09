@@ -1,0 +1,44 @@
+@use "../../../assets/styles/variables" as vars;
+
+.navbar {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 2rem;
+    height: 58px;
+    width: 100%;
+    padding-left: 40px;
+    list-style: none;
+    font-size: 2rem;
+    line-height: normal;
+    color: vars.$color-secondary;
+    background-color: vars.$color-tertiary;
+    font-family: vars.$font-secondary;
+    text-transform: uppercase;
+    box-shadow: rgba(0, 0, 0, 0.4) 10px 10px 10px;
+
+    li {
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            scale: 1.1;
+            color: white;
+        }
+
+        &:last-child {
+            color: vars.$color-span;
+            &:hover {
+                color: white;
+            }
+        }
+    }
+}
+
+        
+
+    
+
