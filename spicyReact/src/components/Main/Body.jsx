@@ -1,5 +1,7 @@
 
 import About from './About/About';
+import Favorite from './Favorite/Favorite';
+import Gallery from './Gallery/Gallery';
 
 const Body = () => {
 
@@ -7,6 +9,8 @@ const Body = () => {
 
         <>
             <About heading="Om Spicy" />
+            <Gallery heading="Galleri" />
+            <Favorite heading="Vælg Din favorit" />
 
         </>
     )

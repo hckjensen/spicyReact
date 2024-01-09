@@ -1,0 +1,67 @@
+@use "../../assets/styles/variables" as vars;
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    background-color: vars.$color-primary;
+    padding: 40px 40px;
+    h3{
+        font-size: 4rem;
+        color: vars.$color-span;
+        font-family: vars.$font-secondary;
+    }
+
+    .contact {
+
+        position: relative;
+        
+        .contactInfo {
+            list-style: none;
+
+            li{
+                
+                font-size: 2.5rem;
+                color: white;
+                font-family: vars.$font-primary;
+
+                &:nth-child(4), &:nth-child(5) {
+                    color: vars.$color-span;
+                    
+                }
+            }
+        }
+
+        .followContainer {
+            
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            
+            .circles {
+              display: flex;
+              flex-direction: row;
+              gap: 2rem;
+              margin-top: 20px;
+              
+              width: 100%;
+    
+              .circle {
+                height: 60px;
+                width: 60px;
+                border-radius: 50%;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                transition: all 0.2s ease-in-out;
+                cursor: pointer;
+                &:hover {
+                  scale: 1.1;
+                }
+              }
+            }
+          }
+    }
+
+    .map {
+
+    }
+}
